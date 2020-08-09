@@ -43,3 +43,18 @@ php:
 create-project:
 	docker-compose exec php composer create-project "laravel/laravel=6.8" .
 	docker-compose exec php composer require doctrine/dbal
+	docker-compose exec php composer require --dev squizlabs/php_codesniffer
+
+#-----------------------------------------------------------
+# PHP Code Sniffer
+#-----------------------------------------------------------
+
+# PHP Code Sniffer
+sniffer:
+	docker-compose exec php ./vendor/bin/phpcs --standard=phpcs.xml ./
+
+# PHP Code Sniffer Rewrite
+sniffer-rewrite:
+	docker-compose exec php ./vendor/bin/phpcbf --standard=phpcs.xml ./
+
+
