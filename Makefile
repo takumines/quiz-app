@@ -40,6 +40,14 @@ rebuild: down build
 php:
 	docker-compose exec php bash
 
+# Install npm
+install-npm:
+	docker-compose exec php bash npm install
+
+#-----------------------------------------------------------
+# Create Laravel Project
+#-----------------------------------------------------------
+
 create-project:
 	docker-compose exec php composer create-project "laravel/laravel=6.8" .
 	docker-compose exec php composer require doctrine/dbal
