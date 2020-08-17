@@ -10,5 +10,5 @@ mix.browserSync({
     files: [
         "public/**/*.*"
     ],
-    proxy: 'http://localhost:8000'
+    proxy: 'http://localhost:80'
 });

@@ -12,6 +12,6 @@
 <div id="app">
     <app />
 </div>
-<script src="/js/home.js"></script>
+<script src="/js/quiz.js"></script>
 </body>
 </html>
