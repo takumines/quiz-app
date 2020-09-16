@@ -11,10 +11,21 @@
 |
 */
 
+use App\Events\TaskAdded;
+
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
+});
+
+Route::get('/todos', function () {
+    return view('todos.index');
 });
 
 Route::get('/quiz', function () {
     return view('quiz.index');
+});
+
+Route::get('/tasks', function () {
+    $task = ['id' => 1, 'name' => 'メールの確認'];
+    event(new TaskAdded($task));
 });

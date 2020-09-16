@@ -12,20 +12,24 @@
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.14.0",
         "axios": "^0.19",
-        "bootstrap": "^3.3.7",
+        "bootstrap": "^3.4.1",
         "browser-sync": "^2.26.12",
-        "browser-sync-webpack-plugin": "^2.0.1",
+        "browser-sync-webpack-plugin": "^2.2.2",
         "chart.js": "^2.9.3",
         "cross-env": "^5.1",
         "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.20",
         "node-sass": "^4.14.1",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
-        "vue": "^2.6.11",
+        "vue": "^2.6.12",
         "vue-chartjs": "^3.5.0",
         "vue-social-sharing": "^2.4.6",
-        "vue-template-compiler": "^2.6.11"
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "laravel-echo": "^1.8.1",
+        "pusher-js": "^7.0.0"
     }
 }
